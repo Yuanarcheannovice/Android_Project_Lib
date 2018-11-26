@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_red_sub_color">#8C240B</color>
+    <color name="main_red_light_color">#D73B11</color>
+
+    <color name="main_yellow_light_color">#f9e4c5</color>
+
+    <color name="main_yellow_sub_color">#fd9b00</color>
+
+    <color name="txt_yellow_color">#fd9b00</color>
+
+    <color name="txt_color_0">#000000</color>
+
+    <color name="txt_color_3">#333333</color>
+
+    <color name="txt_color_6">#666666</color>
+
+    <color name="txt_color_9">#999999</color>
+
+    <color name="txt_color_greem">#00FF84</color>
+
+    <color name="txt_color_c5">#c5c5c5</color>
+
+    <!--文字白色-->
+    <color name="txt_write_color">#f0f0f0</color>
+
+    <color name="write_color">#f0f0f0</color>
+
+    <color name="code_bg_color">#686882</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!--左边列表背景色  深色-->
+    <color name="left_rv_bg_color_drak">#9900223f</color>
+
+    <!--右边列表背景色  深色-->
+    <color name="right_bg_color_drak">#6600223f</color>
+
+    <!--左边列表背景色  浅色-->
+    <color name="left_rv_bg_color_light">#99ffffff</color>
+
+    <!--右边列表背景色  浅色-->
+    <color name="right_bg_color_light">#66ffffff</color>
+
+    <color name="focus_light">#F6DDB5</color>
+
+
+    <color name="red_txt_color">#CC0102</color>
+
+    <!--上一页，下一页的按钮-->
+    <color name="tv_page_bg_color">#E6E6E6</color>
+
+
+    <color name="E6_color">#E6E6E6</color>
+
+
+    <color name="image_load_placeholder">#E6E6E6</color>
+
+    <color name="image_load_error">#000000</color>
+
+    <color name="transparent70">#4D000000</color>
+
+    <!--分割线-->
+    <color name="divider_color">#DFDFDF</color>
+
+    <color name="monitro_bg_color">#33000000</color>
+    <color name="monitor_item_title_color">#55000000</color>
+</resources>

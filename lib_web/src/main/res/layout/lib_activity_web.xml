@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingLeft="70dp"
+    android:paddingRight="44dp"
+    android:paddingTop="70dp">
+
+    <TextView
+        android:id="@+id/lib_web_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#CC0102"
+        android:textSize="35dp"
+        tools:text="党建学习" />
+
+    <TextView
+        android:id="@+id/lib_web_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textColor="#333333"
+        android:textSize="20dp"
+        tools:text="编稿时间：2018-03-29 来源：汝城新闻网 作者：立志 " />
+
+    <org.xwalk.core.XWalkView
+        android:id="@+id/lib_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+</LinearLayout>

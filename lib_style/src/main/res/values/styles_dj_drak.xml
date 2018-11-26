@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--党建 深色 -->
+
+    <!--主界面 左边Tab栏 列表样式-->
+    <style name="MainRecyclerViewLeftStyle.drak">
+        <item name="android:background">@color/left_rv_bg_color_drak</item>
+    </style>
+
+    <!--一般左边文字style-->
+    <style name="MainLeftTxtStyle.drak">
+        <item name="android:background">@drawable/left_layout_bg_select</item>
+        <item name="android:textColor">@color/txt_write_color</item>
+    </style>
+
+
+    <!--右边中间 列表布局 Rv-->
+    <style name="RightCenterRecyclerViewStyle.drak">
+        <item name="android:background">@color/right_bg_color_drak</item>
+    </style>
+
+    <!--右边中间 列表布局一般布局-->
+    <style name="RightCenterStyle.drak">
+        <item name="android:background">@color/right_bg_color_drak</item>
+    </style>
+
+
+    <!--一般右边 文字布局-->
+    <style name="RightItemLayoutStyle.drak">
+        <item name="android:background">@drawable/main_light_layout_bg_select</item>
+    </style>
+
+
+    <!--列表大文字-->
+    <style name="ItemTextViewBigStyle.drak">
+        <item name="android:textColor">@color/txt_write_color</item>
+    </style>
+
+    <!--列表小文字-->
+    <style name="ItemTextViewMinStyle.drak">
+        <item name="android:textColor">@color/txt_color_c5</item>
+    </style>
+
+
+</resources>

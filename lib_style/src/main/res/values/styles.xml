@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <style name="Focusable">
+        <item name="android:descendantFocusability">afterDescendants</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="LauncherStyle" parent="Focusable">
+        <item name="android:background">@drawable/border_focus_selector</item>
+    </style>
+
+    <style name="LayoutStyle" parent="Focusable">
+        <item name="android:background">@drawable/main_light_layout_bg_select</item>
+        <item name="android:padding">7dp</item>
+    </style>
+
+
+    <style name="TextViewButtonStyle" parent="Focusable">
+        <item name="android:background">@drawable/txt_bg_select</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+
+    <!--RecyclerView的通用style-->
+    <style name="RecyclerViewBaseStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    ////////////////////---------信息发布界面的style----begin----------/////////////////////////
+
+    <!--主界面 左边Tab栏 列表样式-->
+    <style name="MainRecyclerViewLeftStyle" parent="RecyclerViewBaseStyle">
+        <item name="android:layout_width">217dp</item>
+        <item name="android:layout_marginBottom">@dimen/pa_bottom_margin</item>
+        <item name="android:layout_marginStart">@dimen/pa_left_margin</item>
+        <item name="android:layout_marginTop">@dimen/pa_top_margin</item>
+        <item name="android:background">@color/left_rv_bg_color_drak</item>
+    </style>
+
+
+    <!--主界面 右边 帧布局样式-->
+    <style name="MainRightFrameLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--左边tab栏的宽+左边tab栏的边距-->
+        <item name="android:layout_marginStart">257dp</item>
+    </style>
+
+    ////////////////////-----------------------/////////////////////////
+
+    <!--左边列表 文字style-->
+    <style name="MainLeftTxtStyle" parent="Focusable">
+        <item name="android:background">@drawable/left_layout_bg_select</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">106dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/txt_write_color</item>
+        <item name="android:textSize">28dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    ////////////////////-----------------------/////////////////////////
+
+    <!--右边主父布局-->
+    <style name="RightMainLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingRight">40dp</item>
+    </style>
+
+
+    <!--右边中间 列表布局 Rv 布局-->
+    <style name="RightCenterRecyclerViewStyle" parent="RecyclerViewBaseStyle">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/right_bg_color_drak</item>
+    </style>
+
+
+    <!--右边中间 列表布局一般布局-->
+    <style name="RightCenterStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/right_bg_color_drak</item>
+    </style>
+
+
+    <!--右边顶部布局-->
+    <style name="RightTopLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+    </style>
+
+    <!--右边底部布局-->
+    <style name="RightBottomLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+
+    ////////////////////-----------------------/////////////////////////
+
+
+    <!--一般右边 条目布局-->
+    <style name="RightItemLayoutStyle" parent="Focusable">
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:background">@drawable/main_light_layout_bg_select</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:paddingLeft">66dp</item>
+        <item name="android:paddingRight">35dp</item>
+    </style>
+
+    <!--一般右边列表是图片的布局-->
+    <style name="RightItemImageLayoutStyle" parent="Focusable">
+        <item name="android:background">@drawable/right_image_layout_selector</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">195dp</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+
+    <!--列表大文字-->
+    <style name="ItemTextViewBigStyle">
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_write_color</item>
+        <item name="android:textSize">@dimen/item_txt_big_size</item>
+    </style>
+
+    <!--列表小文字-->
+    <style name="ItemTextViewMinStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/txt_color_c5</item>
+        <item name="android:textSize">@dimen/item_txt_min_size</item>
+    </style>
+
+
+    <!--上一页-->
+    <style name="TopPageStyle" parent="Focusable">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/top_page_selector</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:text">上一页</item>
+        <item name="android:textColor">@color/yellow_write_txt_select_color</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!--下一页-->
+    <style name="NextPageStyle" parent="Focusable">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/top_page_selector</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:text">下一页</item>
+        <item name="android:textColor">@color/yellow_write_txt_select_color</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+
+    ////////////////////---------信息发布界面的style----end----------/////////////////////////
+
+</resources>

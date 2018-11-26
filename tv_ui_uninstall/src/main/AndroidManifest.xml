@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.caratel.lib.ui.uninstall">
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+
+    <application>
+        <activity
+            android:name="cn.caratel.tv.lib.ui.uninstall.UnInstallActivity"
+            android:theme="@style/UninstallTheme" />
+    </application>
+</manifest>

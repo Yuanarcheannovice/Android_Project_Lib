@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_left_padding">70dp</dimen>
+    <dimen name="main_right_padding">64dp</dimen>
+    <dimen name="main_top_padding">120dp</dimen>
+    <dimen name="main_bottom_padding">180dp</dimen>
+
+
+    <dimen name="pa_left_margin">40dp</dimen>
+    <dimen name="pa_right_margin">64dp</dimen>
+    <dimen name="pa_top_margin">120dp</dimen>
+    <dimen name="pa_bottom_margin">180dp</dimen>
+
+        <!--列表 大文字-->
+    <dimen name="item_txt_big_size">24dp</dimen>
+
+    <dimen name="item_txt_min_size">16dp</dimen>
+
+    <!--monitor recyclerview-->
+    <dimen name="monitor_rv_width">533dp</dimen>
+    <dimen name="monitor_rv_height">463dp</dimen>
+    <!--monitor_item_layout-->
+    <dimen name="monitor_item_img_w">246dp</dimen>
+    <dimen name="monitor_item_img_h">173dp</dimen>
+    <dimen name="monitor_item_title_size">17dp</dimen>
+    <dimen name="monitor_item_title_h">40dp</dimen>
+    <dimen name="monitor_item_boder_margin">3dp</dimen>
+</resources>

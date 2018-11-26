@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--比例ImageView-->
+    <declare-styleable name="XProportionImageView">
+        <attr name="xpiWidthRatio" format="float" />
+        <attr name="xpiHeightRatio" format="float" />
+    </declare-styleable>
+
+    <!--比例Layout-->
+    <declare-styleable name="XProportionLayout">
+        <attr name="xplWidthRatio" format="float" />
+        <attr name="xplHeightRatio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="TvFocusLayout">
+        <attr name="layout_scale" format="float" />
+        <attr name="layout_duration" format="integer" />
+    </declare-styleable>
+</resources>

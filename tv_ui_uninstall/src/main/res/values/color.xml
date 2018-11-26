@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lib_colorPrimary_color">#0084FF</color>
+    <color name="lib_ui_uninstall_color">#8CE6FF</color>
+</resources>
