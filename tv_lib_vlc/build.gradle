@@ -42,13 +42,12 @@ dependencies {
 //上传github 作为maven仓库
 apply plugin: 'maven'
 
-//build.finalizedBy(uploadArchives)
 
 uploadArchives{
     repositories.mavenDeployer{
         repository(url:uri("../maven"))
         pom.project{
-            groupId "cn.xz.lib"// 唯一标识（通常为模块包名，也可以任意）
+            groupId rootProject.ext.groupId// 唯一标识（通常为模块包名，也可以任意）
             artifactId 'tv_lib_vlc'// 项目名称（通常为类库模块名称，也可以任意）
             version "1.0.1" // 版本号
         }

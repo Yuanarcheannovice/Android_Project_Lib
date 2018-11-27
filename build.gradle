@@ -41,7 +41,7 @@ ext {
     website = 'https://github.com/Yuanarcheannovice/Android_Project_Lib'
     userOrg = 'yuanarcheannovice'
     repoName='Android_Project_Lib'
-    groupId = 'cn.xz.lib'
+    groupId = 'com.yuanarcheannovice.android'
 }
 
 
