@@ -48,7 +48,7 @@ uploadArchives{
         pom.project{
             groupId rootProject.ext.groupId// 唯一标识（通常为模块包名，也可以任意）
             artifactId 'lib_widget'// 项目名称（通常为类库模块名称，也可以任意）
-            version "1.0.1" // 版本号
+            version "1.0.2" // 版本号
         }
     }
 }
