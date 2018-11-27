@@ -19,6 +19,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 
 }
 
@@ -33,4 +36,20 @@ dependencies {
     //okhttph鸿洋的封装(https://github.com/hongyangAndroid/okhttputils)
     api 'com.zhy:okhttputils:2.6.2'
     api 'com.google.code.gson:gson:2.8.2'
+}
+
+//上传github 作为maven仓库
+apply plugin: 'maven'
+
+//build.finalizedBy(uploadArchives)
+
+uploadArchives{
+    repositories.mavenDeployer{
+        repository(url:uri("../maven"))
+        pom.project{
+            groupId "cn.xz.lib"// 唯一标识（通常为模块包名，也可以任意）
+            artifactId 'lib_http'// 项目名称（通常为类库模块名称，也可以任意）
+            version "1.0.1" // 版本号
+        }
+    }
 }
