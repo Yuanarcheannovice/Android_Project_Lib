@@ -2,6 +2,8 @@ package cn.caratel.lib.widget.dialog;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.graphics.Point;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +13,6 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import cn.caratel.lib.util.Util;
 import cn.caratel.lib.widget.R;
 
 
@@ -58,7 +59,7 @@ public class LoadingDialog {
         // 必须放到显示对话框下面，否则显示不出效果
         Window window = mDialog.getWindow();
         WindowManager.LayoutParams params = window.getAttributes();
-        params.width = Util.getPhoneWidth(mContext) * 4 / 5;
+        params.width =getPhoneWidth(mContext) * 4 / 5;
         params.height = ViewGroup.LayoutParams.WRAP_CONTENT;
         params.gravity = Gravity.CENTER;
         window.setAttributes(params);
@@ -106,5 +107,17 @@ public class LoadingDialog {
             mProgressBar = null;
             mCancelTv = null;
         }
+    }
+
+    /**
+     * 得到手机宽度 返回px
+     */
+    public static int getPhoneWidth(Context context) {
+        WindowManager windowManager = (WindowManager) context.getApplicationContext().getSystemService("window");
+        Display display = windowManager.getDefaultDisplay();
+        Point point = new Point();
+        display.getSize(point);
+        int width = point.x;
+        return width;
     }
 }

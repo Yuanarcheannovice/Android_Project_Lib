@@ -43,7 +43,7 @@ uploadArchives{
         repository(url:uri("../maven"))
         pom.project{
             groupId rootProject.ext.groupId// 唯一标识（通常为模块包名，也可以任意）
-            artifactId 'lib_util_x'// 项目名称（通常为类库模块名称，也可以任意）
+            artifactId 'lib_util'// 项目名称（通常为类库模块名称，也可以任意）
             version "1.0.1" // 版本号
         }
     }
