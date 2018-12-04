@@ -1,4 +1,4 @@
-include ':app', ':lib_base'
-include ':lib_http', ':lib_util', ':lib_widget', ':crosswalkwebview23535894arm', ':lib_style', ':lib_util_fresco', ':tv_lib_vlc', ':tv_ui_uninstall'
+include ':app', ':lib_base', ':Xadapter'
+include ':lib_http', ':lib_util', ':lib_widget', ':crosswalkwebview23535894arm'
+include ':lib_style', ':lib_util_fresco', ':tv_lib_vlc', ':tv_ui_uninstall'
 
-//include ':lib_web'
