@@ -4,6 +4,7 @@
     <declare-styleable name="XProportionImageView">
         <attr name="xpiWidthRatio" format="float" />
         <attr name="xpiHeightRatio" format="float" />
+        <attr name="xpiIsWidthTarget" format="boolean" />
     </declare-styleable>
 
     <!--比例Layout-->
