@@ -11,6 +11,7 @@
     <declare-styleable name="XProportionLayout">
         <attr name="xplWidthRatio" format="float" />
         <attr name="xplHeightRatio" format="float" />
+        <attr name="xplIsWidthTarget" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="TvFocusLayout">
