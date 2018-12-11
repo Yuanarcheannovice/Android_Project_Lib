@@ -37,7 +37,7 @@ public class XProportionConstraintLayout extends ConstraintLayout {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.XProportionLayout);
         mWidthRatio = typedArray.getFloat(R.styleable.XProportionLayout_xplWidthRatio, -1);
         mHeightRatio = typedArray.getFloat(R.styleable.XProportionLayout_xplHeightRatio, -1);
-        isWidthTarget = typedArray.getBoolean(R.styleable.XProportionImageView_xpiIsWidthTarget, true);
+        isWidthTarget = typedArray.getBoolean(R.styleable.XProportionLayout_xplIsWidthTarget, true);
         typedArray.recycle();
     }
 
