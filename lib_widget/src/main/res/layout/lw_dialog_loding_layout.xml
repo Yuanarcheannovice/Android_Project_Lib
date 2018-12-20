@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="35dp"
         android:text=""
         android:textColor="@color/lw_txt_color_3"
         android:textSize="26dp" />
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="10dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="5dp"
         android:background="@color/lw_write_color"
