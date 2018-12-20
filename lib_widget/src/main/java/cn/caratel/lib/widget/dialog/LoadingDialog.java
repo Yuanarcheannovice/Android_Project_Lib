@@ -28,6 +28,7 @@ public class LoadingDialog {
     private AlertDialog mDialog;
     private View mView;
     private TextView mCancelTv;
+    private TextView mTitleTv;
 
     public LoadingDialog(Context context) {
         this.mContext = context;
@@ -38,6 +39,7 @@ public class LoadingDialog {
         mView = LayoutInflater.from(mContext).inflate(R.layout.lw_dialog_loding_layout, null);
         mProgressBar = mView.findViewById(R.id.min_appupdate_seekbar);
         mProgressTv = mView.findViewById(R.id.min_appupdate_tv);
+        mTitleTv = mView.findViewById(R.id.min_title_tv);
         mCancelTv = mView.findViewById(R.id.dll_cacenl);
         mCancelTv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +104,17 @@ public class LoadingDialog {
                 @Override
                 public void run() {
                     mProgressTv.setText(showStr + ((int) (100 * progress)) + "/100");
+                }
+            });
+        }
+    }
+
+    public void refreshTitle(final String titleStr){
+        if(mTitleTv!=null){
+            mTitleTv.post(new Runnable() {
+                @Override
+                public void run() {
+                    mTitleTv.setText(titleStr);
                 }
             });
         }
