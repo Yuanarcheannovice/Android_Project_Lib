@@ -41,7 +41,7 @@ public class AppPathManager {
      * return：/storage/sdcard0 or sdcard1/Android/data/<包名>/files
      * 返回值:StringBuffer
      */
-    private static StringBuffer getExternalRootFilesCachePath(Context context) {
+    public static StringBuffer getExternalRootFilesCachePath(Context context) {
         if (context.getExternalCacheDir() == null) {
             return new StringBuffer(context.getCacheDir()
                     .getAbsolutePath()).append("/");
@@ -56,7 +56,7 @@ public class AppPathManager {
      * return：/storage/sdcard0 or sdcard1/Android/data/<包名>/caches
      * 返回值:StringBuffer
      */
-    private static StringBuffer getExternalRootCachePath(Context context) {
+    public static StringBuffer getExternalRootCachePath(Context context) {
         if (context.getExternalCacheDir() == null) {
             return new StringBuffer(context.getCacheDir()
                     .getAbsolutePath()).append("/");
